@@ -1,0 +1,35 @@
+{
+  "name": "sw-complete-intro-to-react-v4",
+  "version": "1.0.0",
+  "description": "A walkthrough of Brian Holt's React course (v4)",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "format": "prettier --write \"src/**/*.{js, jsx, css,json} \"",
+    "format:check": "prettier --list:different \"src/**/*.{js, jsx, css,json} \"",
+    "lint": "eslint --fix \"**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/stephencweiss/fem-intro-to-react-v4.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Stephen Weiss <stephencweiss@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/stephencweiss/fem-intro-to-react-v4/issues"
+  },
+  "homepage": "https://gitlab.com/stephencweiss/fem-intro-to-react-v4#readme",
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
