@@ -7,25 +7,31 @@ const Pet = (props) => {
   ])
 }
 
-const App = () => {
-  return React.createElement("div", {},[
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, {
-      name: 'Finn',
-      animal:'Dog',
-      breed: 'Mix'
-    }),
-    React.createElement(Pet, {
-      name: 'Luna',
-      animal:'Dog',
-      breed: 'Havanese'
-    }),
-    React.createElement(Pet, {
-      name: 'Lucy',
-      animal:'Dog',
-      breed: 'Labrador'
-    }),
-  ])
+// class component
+class App extends React.Component{
+  handleTitleClick() {
+    alert('You clicked the title!');
+  }
+  render() {
+    return React.createElement("div", {},[
+      React.createElement("h1", { onClick: this.handleTitleClick}, "Adopt Me!"),
+      React.createElement(Pet, {
+        name: 'Finn',
+        animal:'Dog',
+        breed: 'Mix'
+      }),
+      React.createElement(Pet, {
+        name: 'Luna',
+        animal:'Dog',
+        breed: 'Havanese'
+      }),
+      React.createElement(Pet, {
+        name: 'Lucy',
+        animal:'Dog',
+        breed: 'Labrador'
+      }),
+    ])
+  }
 }
 
 // Create an instance of my class
