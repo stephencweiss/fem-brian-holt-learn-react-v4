@@ -17,7 +17,11 @@ class App extends React.Component {
   }
   componentDidMount() {
     petFinder.pet
-      .find({ output: "full", location: "Chicago, IL", animal: "dog" })
+      .find({
+        output: "full",
+        location: "Chicago, IL",
+        animal: "dog"
+      })
       .then(data => {
         let pets;
         // console.log(`The data is --> `, data);
