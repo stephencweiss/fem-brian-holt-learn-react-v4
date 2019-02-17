@@ -7,12 +7,9 @@ const petFinder = pf({
   secret: process.env.API_SECRET
 });
 class Details extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true
-    };
-  }
+  state = {
+    loading: true
+  };
   componentDidMount() {
     const { id } = this.props;
     petFinder.pet
