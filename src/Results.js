@@ -33,7 +33,6 @@ class Results extends React.Component {
         } else {
           pets = [];
         }
-        console.log(`pets is now--> `, pets);
         this.setState({ pets });
       });
   }
@@ -50,6 +49,7 @@ class Results extends React.Component {
           return (
             <Pet
               key={pet.id}
+              id={pet.id} //React does not pass the key, so it cannot be used.
               animal={pet.animal}
               name={pet.name}
               breed={breed}
