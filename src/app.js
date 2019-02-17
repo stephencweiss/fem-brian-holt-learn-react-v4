@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
 import pf from "petfinder-client";
 import Results from "./Results";
 import Details from "./Details";
@@ -69,7 +69,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Adopt Me!</h1>
+        <header>
+          <Link to="/">Adopt Me!</Link>
+          <Link to="/search-params">
+            <span aria-label="search" role="img">
+              🔍
+            </span>
+          </Link>
+        </header>
         <Provider value={this.state}>
           <Router>
             <Results path="/" />
