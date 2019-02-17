@@ -18,7 +18,8 @@ class Pet extends Component {
           <img src={photos[0].value} alt={name} />
         </div>
         <div className="info">
-          {animal} - {name} - {breed} - {location}
+          <h1>{name}</h1>
+          <h2> {animal} - {breed} - {location} </h2>
         </div>
       </div>
     );
